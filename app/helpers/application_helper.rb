@@ -10,7 +10,7 @@ module ApplicationHelper
       json.array!(events) do |event|
         json.id event.id
         json.location_name event.location_name
-        json.start_time event.start_time
+        json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
         json.artists_names event.artists_names
       end
     end
@@ -20,7 +20,7 @@ module ApplicationHelper
     Jbuilder.encode do |json|
       json.id event.id
       json.location_name event.location_name
-      json.start_time event.start_time
+      json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
       json.artists_names event.artists_names
     end
   end

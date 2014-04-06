@@ -14,6 +14,8 @@ gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
 gem 'haml', '~> 4.0.5'
 gem 'rails_admin', '~> 0.6.2'
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'haml_coffee_assets', github: 'jdnguyen/haml_coffee_assets'
+gem 'execjs'
 
 group :development, :test do
   gem 'rspec', '~> 2.14.1'

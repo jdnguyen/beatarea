@@ -1,0 +1,5 @@
+= @event.get("artists_names")
+playing at
+= @event.get("location_name")
+on
+= @event.get("start_time")

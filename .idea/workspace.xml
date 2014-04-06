@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="created helper methods for events">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/event.hamlc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/home_router.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/home_router.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.haml" afterPath="$PROJECT_DIR$/app/views/home/index.html.haml" />
+    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="working on the events backbone">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/context.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/event.hamlc" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/.gitkeep" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="beatarea.iws" />
@@ -17,7 +22,6 @@
     <file path="/home_controller_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396770615083" ignored="false" />
     <file path="$PROJECT_DIR$/config/initializers/session_store.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396730752280" ignored="false" />
     <file path="$PROJECT_DIR$/config/initializers/mime_types.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396730752280" ignored="false" />
-    <file path="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396730752280" ignored="false" />
     <file path="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396730752280" ignored="false" />
     <file path="$PROJECT_DIR$/config/initializers/inflections.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396730752280" ignored="false" />
     <file path="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396730752280" ignored="false" />
@@ -29,16 +33,16 @@
     <file path="/rails_admin.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396745431068" ignored="false" />
     <file path="/event.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396771353970" ignored="false" />
     <file path="/.gitignore" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396746631620" ignored="false" />
-    <file path="/Gemfile" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396755430437" ignored="false" />
+    <file path="/Gemfile" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396776838939" ignored="false" />
     <file path="/production.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396747918572" ignored="false" />
     <file path="/mongoid.yml" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396749038881" ignored="false" />
     <file path="/artist_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396768508656" ignored="false" />
     <file path="/event_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396771335570" ignored="false" />
     <file path="/factories.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396769106698" ignored="false" />
-    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396775720640" ignored="false" />
+    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396776069881" ignored="false" />
     <file path="/bootstrap.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396757574117" ignored="false" />
     <file path="/home_router.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773315639" ignored="false" />
-    <file path="/beatarea.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396758502404" ignored="false" />
+    <file path="/beatarea.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777413425" ignored="false" />
     <file path="/genre.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396768427859" ignored="false" />
     <file path="/genre_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396768440942" ignored="false" />
     <file path="/event.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773374712" ignored="false" />
@@ -46,9 +50,14 @@
     <file path="/event_controller_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772889196" ignored="false" />
     <file path="/application_helper.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772742461" ignored="false" />
     <file path="/events_controller.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772762790" ignored="false" />
-    <file path="/events_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773994480" ignored="false" />
-    <file path="/event_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773964629" ignored="false" />
+    <file path="/events_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777602412" ignored="false" />
+    <file path="/event_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777917250" ignored="false" />
     <file path="/event.hamlc.erb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773926967" ignored="false" />
+    <file path="/application.js" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777112868" ignored="false" />
+    <file path="/context.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777388370" ignored="false" />
+    <file path="/eventz.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778282043" ignored="false" />
+    <file path="/event.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778519512" ignored="false" />
+    <file path="/main.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778585471" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,73 +79,91 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Gemfile">
+          <file leaf-file-name="resolver.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file:///var/lib/gems/1.9.1/gems/haml_coffee_assets-1.16.0/lib/haml_coffee_assets/action_view/resolver.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="44" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+                <state line="4" column="18" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="context.js.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/context.js.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="0" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="beatarea.js.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/application.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="18" selection-start="419" selection-end="450" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="2" selection-start="579" selection-end="579" vertical-scroll-proportion="0.28253424">
+                <state line="17" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="events_view.js.coffee" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="main.css.sass" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="4" selection-start="1" selection-end="4" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="events_view.js.coffee" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="28" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+                <state line="16" column="2" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2690583">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home_router.js.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/routers/home_router.js.coffee">
+          <file leaf-file-name="event.hamlc" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+                <state line="5" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="events_controller.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
+          <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="3" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="artist.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/artist.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="31" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="event.js.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="16" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/event.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="21" selection-start="421" selection-end="433" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -173,6 +200,15 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="69" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="event_spec.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/models/event_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
@@ -182,19 +218,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="event_view.js.coffee" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="event_view.js.coffee" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="20" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="event.hamlc" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/event.hamlc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
+                <state line="8" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="0.13143483">
                   <folding />
                 </state>
               </provider>
@@ -224,22 +251,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/event_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/home_router.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/event.hamlc.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/context.js.coffee" />
+        <option value="/var/lib/gems/1.9.1/gems/haml_coffee_assets-1.16.0/lib/haml_coffee_assets/action_view/resolver.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/context.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/eventz.hamlc" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/context.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/context.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -255,6 +282,52 @@
     <option name="y" value="-4" />
     <option name="width" value="1857" />
     <option name="height" value="1085" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Ruby</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -476,26 +549,8 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="beatarea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beatarea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,10 +575,6 @@
               <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -544,14 +595,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beatarea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beatarea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beatarea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beatarea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,7 +654,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
@@ -579,8 +670,8 @@
       <recent name="$PROJECT_DIR$/spec/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/javascripts/backbone" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/app/assets/javascripts/backbone" />
       <recent name="$PROJECT_DIR$/spec" />
     </key>
   </component>
@@ -1053,7 +1144,11 @@
       <created>1396772924157</created>
       <updated>1396772924157</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="working on the events backbone">
+      <created>1396775747636</created>
+      <updated>1396775747636</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1063,10 +1158,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14317302" sideWeight="0.67083335" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23161969" sideWeight="0.67083335" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5002764" order="7" side_tool="true" content_ui="tabs" />
@@ -1128,7 +1223,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished event controller for querying events" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on the events backbone" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1147,6 +1242,7 @@
     <MESSAGE value="added in factory for genre" />
     <MESSAGE value="created helper methods for events" />
     <MESSAGE value="finished event controller for querying events" />
+    <MESSAGE value="working on the events backbone" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1156,44 +1252,72 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/controllers/event_controller_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+        <state line="4" column="16" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/artist.rb">
+    <entry file="file:///var/lib/gems/1.9.1/gems/haml_coffee_assets-1.16.0/lib/haml_coffee_assets/action_view/resolver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="31" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+        <state line="4" column="18" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///var/lib/gems/1.9.1/gems/sprockets-2.11.0/lib/sprockets/manifest.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="58" selection-start="4545" selection-end="4545" vertical-scroll-proportion="0.20100503">
+        <state line="13" column="18" selection-start="419" selection-end="450" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="61" selection-end="61" vertical-scroll-proportion="0.050251257">
+        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/event_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.20100503">
+        <state line="10" column="25" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.15075377">
+        <state line="17" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="0" selection-end="150" vertical-scroll-proportion="0.08214677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1205,58 +1329,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+        <state line="0" column="4" selection-start="1" selection-end="4" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/routers/home_router.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+        <state line="22" column="69" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="0.13143483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/context.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="3" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/templates/event.hamlc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="44" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="579" selection-end="579" vertical-scroll-proportion="0.28253424">
+        <state line="16" column="2" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2690583">
           <folding />
         </state>
       </provider>

@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap
 //= require underscore
+//= require_directory ./templates
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink

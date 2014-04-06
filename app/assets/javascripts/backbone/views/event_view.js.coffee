@@ -3,11 +3,9 @@ class BeatArea.Views.Event extends Backbone.View
   template: JST['event']
 
   initialize: (options) ->
-    console.log "sup"
     @render()
 
   render: ->
-    console.log @model
-    @$el.html template
+    @$el.html @template
       event: @model
 
