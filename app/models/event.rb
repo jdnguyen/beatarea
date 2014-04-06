@@ -15,4 +15,8 @@ class Event
 
   scope :upcoming, -> { where(:start_time.gt => Time.now) }
   scope :sort_by_date, -> { order_by(:start_time => :asc) }
+
+  def artists_names
+    self.artists.map(&:name).join(',')
+  end
 end

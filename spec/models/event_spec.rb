@@ -35,4 +35,18 @@ describe Event do
       end
     end
   end
+
+  describe 'classes' do
+    describe 'artists_names' do
+      before do
+        @dj_one = create(:artist, :name => 'Bob')
+        @dj_two = create(:artist, :name => 'John')
+        @event = create(:event, :artists => [@dj_one, @dj_two])
+      end
+
+      it 'should join the artists names' do
+        @event.artists_names.should == 'Bob,John'
+      end
+    end
+  end
 end
