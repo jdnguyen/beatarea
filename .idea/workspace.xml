@@ -51,19 +51,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+            <state line="20" column="4" selection-start="690" selection-end="690" vertical-scroll-proportion="0.32119915">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rails_admin.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="rails_admin.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.32119915">
+            <state line="16" column="75" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/initializers/rails_admin.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -1073,16 +1073,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+        <state line="16" column="75" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.32119915">
+        <state line="20" column="4" selection-start="690" selection-end="690" vertical-scroll-proportion="0.32119915">
           <folding />
         </state>
       </provider>
