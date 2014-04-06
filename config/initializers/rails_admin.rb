@@ -16,6 +16,9 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  config.assets.initialize_on_precompile = false
+  config.assets.precompile += ['rails_admin/rails_admin.css', 'rails_admin/rails_admin.js']
+
   config.authorize_with do
     authenticate_or_request_with_http_basic('Please enter username and password') do |username, password|
       username == 'admin' && password == 'lphie'
