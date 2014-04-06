@@ -18,6 +18,9 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'haml_coffee_assets', github: 'jdnguyen/haml_coffee_assets'
 gem 'execjs'
 gem 'awesome_print', github: 'jdnguyen/awesome_print'
+gem 'paperclip', '~> 4.1'
+gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
+gem 'aws-sdk', '~> 1.3.4'
 
 group :development, :test do
   gem 'rspec', '~> 2.14.1'
