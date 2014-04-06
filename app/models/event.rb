@@ -9,7 +9,7 @@ class Event
   field :early_bird_time, :type => DateTime
   field :stubhub_id
 
-  has_many :artists
+  has_and_belongs_to_many :artists
 
   validates_presence_of :location_name, :location_address, :start_time
 

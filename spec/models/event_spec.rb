@@ -13,7 +13,7 @@ describe Event do
   end
 
   describe 'associations' do
-    it { should have_many(:artists) }
+    it { should have_and_belong_to_many(:artists) }
   end
 
   describe 'scope' do
