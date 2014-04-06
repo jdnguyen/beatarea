@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+With this Rails app, I'm hoping on creating a website that will aggrigate all electronic dance music events or raves in the area. This way, EDM fans can easily see when upcoming events are happening.
 
-Things you may want to cover:
+It will include features such as:
 
-* Ruby version
+- View which artist is performing when and where
+- Display the artist's website and social media
+- Able to listen to some of the artist's work on Soundcloud
+- Responsive designs to work on mobile
+- Able to sort by artists or genre
+- Able to set up notifications to notify you by email when a new event gets announced by a certain artist or genre
+- Able to set up notifications to notify you an hour before tickets are sold to catch early bird prices
+- View ticket prices on Stubhub using their API in case tickets are all sold out
 
-* System dependencies
+I plan on building this first for NYC since I know the area and after that, I will expand to other big cities in the country. 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+You can view the work in progress here: http://beatarea.herokuapp.com/
