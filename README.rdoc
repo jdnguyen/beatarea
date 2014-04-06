@@ -14,3 +14,5 @@ It will include features such as:
 - View ticket prices on Stubhub using their API in case tickets are all sold out
 
 I plan on building this first for NYC since I know the area and after that, I will expand to other big cities in the country. 
+
+You can view the work in progress here: http://beatarea.herokuapp.com/
