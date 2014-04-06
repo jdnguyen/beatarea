@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/jdnguyen/awesome_print.git
+  revision: 9581041f1a4a31baf9acd643edbb52dd7af796b9
+  specs:
+    awesome_print (1.2.0)
+
+GIT
   remote: git://github.com/jdnguyen/haml_coffee_assets.git
   revision: 1c5038429dbcf14151759913352376107d62c891
   specs:
@@ -50,6 +56,7 @@ GEM
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
     bson (2.2.2)
+    bson_ext (1.5.1)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -204,7 +211,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print!
   bootstrap-sass (~> 3.1.1)
+  bson_ext
   coffee-rails (~> 4.0.0)
   database_cleaner (~> 1.2.0)
   execjs
