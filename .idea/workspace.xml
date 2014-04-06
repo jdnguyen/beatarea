@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="updated seed file">
+    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="added in awesome prints gem">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/beatarea.iml" afterPath="" />
@@ -11,8 +11,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
     </list>
     <ignored path="beatarea.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +38,7 @@
     <file path="/artist_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396768508656" ignored="false" />
     <file path="/event_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396771335570" ignored="false" />
     <file path="/factories.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396769106698" ignored="false" />
-    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396797880802" ignored="false" />
+    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396798141600" ignored="false" />
     <file path="/bootstrap.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396757574117" ignored="false" />
     <file path="/home_router.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773315639" ignored="false" />
     <file path="/beatarea.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777413425" ignored="false" />
@@ -47,7 +47,7 @@
     <file path="/event.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773374712" ignored="false" />
     <file path="/event_controller.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396770811074" ignored="false" />
     <file path="/event_controller_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772889196" ignored="false" />
-    <file path="/application_helper.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772742461" ignored="false" />
+    <file path="/application_helper.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396798103137" ignored="false" />
     <file path="/events_controller.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772762790" ignored="false" />
     <file path="/events_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777602412" ignored="false" />
     <file path="/event_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777917250" ignored="false" />
@@ -58,6 +58,7 @@
     <file path="/event.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778519512" ignored="false" />
     <file path="/main.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778585471" ignored="false" />
     <file path="/seeds.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396796713093" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396798131371" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
     <favorites_list name="beatarea" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.76043165">
+    <splitter split-orientation="horizontal" split-proportion="0.49784172">
       <split-first>
         <leaf>
           <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
@@ -136,7 +137,7 @@
           <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="36" selection-start="456" selection-end="456" vertical-scroll-proportion="0.32663316">
+                <state line="17" column="6" selection-start="480" selection-end="480" vertical-scroll-proportion="0.43664384">
                   <folding />
                 </state>
               </provider>
@@ -191,10 +192,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="69" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
+                <state line="20" column="27" selection-start="587" selection-end="587" vertical-scroll-proportion="0.5025126">
                   <folding />
                 </state>
               </provider>
@@ -227,10 +228,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/event.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="3" selection-start="43" selection-end="43" vertical-scroll-proportion="0.06">
+                <state line="16" column="23" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -266,16 +267,16 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/templates/eventz.hamlc" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee" />
         <option value="$PROJECT_DIR$/app/models/artist.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1303,7 +1304,11 @@
       <created>1396796836678</created>
       <updated>1396796836678</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added in awesome prints gem">
+      <created>1396798072746</created>
+      <updated>1396798072746</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1378,7 +1383,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated seed file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added in awesome prints gem" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1400,6 +1405,7 @@
     <MESSAGE value="working on the events backbone" />
     <MESSAGE value="event JST is up" />
     <MESSAGE value="updated seed file" />
+    <MESSAGE value="added in awesome prints gem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1409,13 +1415,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
@@ -1500,13 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="43" selection-end="43" vertical-scroll-proportion="0.06">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="16" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
@@ -1514,9 +1506,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="27" selection-start="587" selection-end="587" vertical-scroll-proportion="0.5025126">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="456" selection-end="456" vertical-scroll-proportion="0.32663316">
+        <state line="17" column="6" selection-start="480" selection-end="480" vertical-scroll-proportion="0.43664384">
           <folding />
         </state>
       </provider>
