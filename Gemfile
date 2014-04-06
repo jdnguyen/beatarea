@@ -11,8 +11,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'mongoid', '~> 4.0.0.beta1', github: 'mongoid/mongoid'
-gem 'rspec', '~> 2.14.1'
-gem 'rspec-rails', '~> 2.14.2'
-gem 'mongoid-rspec'
 gem 'haml', '~> 4.0.5'
 gem 'rails_admin', '~> 0.6.2'
+
+group :development, :test do
+  gem 'rspec', '~> 2.14.1'
+  gem 'rspec-rails', '~> 2.14.2'
+  gem 'mongoid-rspec'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner', '~> 1.2.0'
+end

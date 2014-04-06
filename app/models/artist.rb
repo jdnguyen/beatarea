@@ -9,7 +9,8 @@ class Artist
   field :facebook_page
   field :twitter_page
 
-  validate :name, :genre
+  validates_presence_of :name, :genre
+  validates_uniqueness_of :name
 
   def genre_enum
     ['ambient', 'drum & bass', 'dubstep', 'electro', 'hardstyle', 'house', 'techno', 'trance', 'trap']

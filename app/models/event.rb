@@ -4,12 +4,15 @@ class Event
 
   field :location_name
   field :location_address
-  field :time, :type => DateTime
+  field :start_time, :type => DateTime
   field :ticket_url
   field :early_bird_time, :type => DateTime
   field :stubhub_id
 
   has_many :artists
 
-  validate :location_name, :location_address, :time
+  validates_presence_of :location_name, :location_address, :start_time
+
+  scope :upcoming, -> { where(:start_time.gt => Time.now) }
+  scope :sort_by_date, -> { order_by(:start_time => :asc) }
 end

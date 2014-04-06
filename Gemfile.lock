@@ -48,10 +48,16 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     connection_pool (2.0.0)
+    database_cleaner (1.2.0)
     diff-lcs (1.2.5)
     ejs (1.0.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
     font-awesome-rails (4.0.3.1)
       railties (>= 3.2, < 5.0)
     haml (4.0.5)
@@ -188,6 +194,8 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  database_cleaner (~> 1.2.0)
+  factory_girl_rails
   haml (~> 4.0.5)
   jbuilder (~> 2.0)
   jquery-rails
