@@ -1,7 +1,13 @@
 module ApplicationHelper
+  def rle(message, title="")
+    Rails.logger.error("-"*10 + " " + title + " " + "-"*60)
+    Rails.logger.error(message)
+    Rails.logger.error("-"*75)
+  end
+
   def json_for_events(events)
     Jbuilder.encode do |json|
-      json.array!(events) do |json, event|
+      json.array!(events) do |event|
         json.id event.id
         json.location_name event.location_name
         json.start_time event.start_time
@@ -13,9 +19,9 @@ module ApplicationHelper
   def json_for_event(event)
     Jbuilder.encode do |json|
       json.id event.id
-      json.name event.name
       json.location_name event.location_name
       json.start_time event.start_time
+      json.artists_names event.artists_names
     end
   end
 end

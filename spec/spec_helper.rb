@@ -5,6 +5,8 @@ require 'rspec/autorun'
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
+include ApplicationHelper
+
 RSpec.configure do |config|
   require 'database_cleaner'
 

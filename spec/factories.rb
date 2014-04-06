@@ -7,7 +7,6 @@ FactoryGirl.define do
 
   factory :artist do
     name "Adventure Club"
-    genre "dubstep"
   end
 
   factory :genre do
