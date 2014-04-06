@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="working on the events backbone">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/context.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/event.hamlc" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/.gitkeep" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
+    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="event JST is up">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="beatarea.iws" />
@@ -32,14 +23,14 @@
     <file path="/spring" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396734606811" ignored="false" />
     <file path="/rails_admin.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396745431068" ignored="false" />
     <file path="/event.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396771353970" ignored="false" />
-    <file path="/.gitignore" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396746631620" ignored="false" />
+    <file path="/.gitignore" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396796775581" ignored="false" />
     <file path="/Gemfile" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396776838939" ignored="false" />
     <file path="/production.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396747918572" ignored="false" />
     <file path="/mongoid.yml" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396749038881" ignored="false" />
     <file path="/artist_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396768508656" ignored="false" />
     <file path="/event_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396771335570" ignored="false" />
     <file path="/factories.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396769106698" ignored="false" />
-    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396776069881" ignored="false" />
+    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396796806946" ignored="false" />
     <file path="/bootstrap.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396757574117" ignored="false" />
     <file path="/home_router.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396773315639" ignored="false" />
     <file path="/beatarea.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777413425" ignored="false" />
@@ -58,6 +49,7 @@
     <file path="/eventz.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778282043" ignored="false" />
     <file path="/event.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778519512" ignored="false" />
     <file path="/main.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778585471" ignored="false" />
+    <file path="/seeds.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396796713093" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,18 +68,9 @@
     <favorites_list name="beatarea" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.76043165">
       <split-first>
         <leaf>
-          <file leaf-file-name="resolver.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file:///var/lib/gems/1.9.1/gems/haml_coffee_assets-1.16.0/lib/haml_coffee_assets/action_view/resolver.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="18" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="context.js.coffee" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/context.js.coffee">
               <provider selected="true" editor-type-id="text-editor">
@@ -101,15 +84,6 @@
             <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="17" column="0" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="beatarea.js.coffee" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -142,10 +116,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="events_view.js.coffee" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="events_view.js.coffee" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="2" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2690583">
+                <state line="16" column="26" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="84" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.13143483">
                   <folding />
                 </state>
               </provider>
@@ -176,7 +168,7 @@
           <file leaf-file-name="artist.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/artist.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="31" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+                <state line="14" column="3" selection-start="269" selection-end="272" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -218,10 +210,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="event_view.js.coffee" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="event_view.js.coffee" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="0.13143483">
+                <state line="11" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="genre.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/genre.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/models/event.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="21" column="3" selection-start="541" selection-end="541" vertical-scroll-proportion="0.38602942">
                   <folding />
                 </state>
               </provider>
@@ -251,9 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/home_router.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/event.hamlc.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/templates/context.js.coffee" />
         <option value="/var/lib/gems/1.9.1/gems/haml_coffee_assets-1.16.0/lib/haml_coffee_assets/action_view/resolver.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -267,6 +274,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee" />
+        <option value="$PROJECT_DIR$/app/models/artist.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -403,6 +413,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beatarea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beatarea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1148,7 +1172,11 @@
       <created>1396775747636</created>
       <updated>1396775747636</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="event JST is up">
+      <created>1396778643360</created>
+      <updated>1396778643360</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1223,7 +1251,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on the events backbone" />
+    <option name="LAST_COMMIT_MESSAGE" value="event JST is up" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1243,6 +1271,7 @@
     <MESSAGE value="created helper methods for events" />
     <MESSAGE value="finished event controller for querying events" />
     <MESSAGE value="working on the events backbone" />
+    <MESSAGE value="event JST is up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1252,48 +1281,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///var/lib/gems/1.9.1/gems/haml_coffee_assets-1.16.0/lib/haml_coffee_assets/action_view/resolver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="419" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/event_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
@@ -1329,23 +1316,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="4" selection-start="1" selection-end="4" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="69" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="149" selection-end="149" vertical-scroll-proportion="0.13143483">
           <folding />
         </state>
       </provider>
@@ -1357,9 +1330,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="1" selection-end="4" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="2" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2690583">
+        <state line="16" column="26" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/genre.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/artist.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="3" selection-start="269" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="84" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/beatarea.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="541" selection-end="541" vertical-scroll-proportion="0.38602942">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.13143483">
           <folding />
         </state>
       </provider>

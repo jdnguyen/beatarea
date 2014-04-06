@@ -14,3 +14,5 @@ heroku # See https://help.github.com/articles/ignoring-files for more about igno
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.idea/*
