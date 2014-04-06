@@ -1,3 +1,10 @@
-%h2
-  BEATAREA
+.navbar.navbar-inverse
+  .container
+    .navbar-header
+      = link_to "BeatArea", root_url, :class => "navbar-brand"
 
+:javascript
+  $(function() {
+    window.router = new BeatArea.Routers.Home();
+    Backbone.history.start();
+  });
