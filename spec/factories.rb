@@ -9,4 +9,8 @@ FactoryGirl.define do
     name "Adventure Club"
     genre "dubstep"
   end
+
+  factory :genre do
+    name "dubstep"
+  end
 end
