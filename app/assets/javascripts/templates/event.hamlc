@@ -1,5 +1,11 @@
-= @event.get("artists_names")
-playing at
-= @event.get("location_name")
-on
-= @event.get("start_time")
+.event-image
+    %img{:src => @event.get("avatar"), :width => 80}
+.event-header
+    %h1
+        = @event.get("artists_names")
+    %h2
+        = @event.get("location_name")
+    %h3
+        = @event.get("start_time")
+
+.glyphicon-plus.expand
