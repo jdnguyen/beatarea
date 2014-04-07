@@ -1,3 +1,6 @@
+.glyphicon-plus.expand
+.glyphicon-minus.close
+
 .event-image
     %img{:src => @event.get("avatar"), :width => 80}
 .event-header
@@ -7,5 +10,4 @@
         = @event.get("location_name")
     %h3
         = @event.get("start_time")
-
-.glyphicon-plus.expand
+    .event-buttons
