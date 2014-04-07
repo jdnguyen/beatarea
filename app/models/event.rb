@@ -10,6 +10,7 @@ class Event
   field :stubhub_id
 
   has_and_belongs_to_many :artists
+  embeds_many :notifications
 
   validates_presence_of :location_name, :location_address, :start_time
 

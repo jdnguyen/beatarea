@@ -14,6 +14,7 @@ describe Event do
 
   describe 'associations' do
     it { should have_and_belong_to_many(:artists) }
+    it { should embed_many(:notifications) }
   end
 
   describe 'scope' do

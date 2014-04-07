@@ -78,6 +78,8 @@ GEM
     database_cleaner (1.2.0)
     diff-lcs (1.2.5)
     ejs (1.0.0)
+    email_validator (1.4.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.0.2)
     factory_girl (4.4.0)
@@ -244,6 +246,7 @@ DEPENDENCIES
   bson_ext
   coffee-rails (~> 4.0.0)
   database_cleaner (~> 1.2.0)
+  email_validator
   execjs
   factory_girl_rails
   haml (~> 4.0.5)
