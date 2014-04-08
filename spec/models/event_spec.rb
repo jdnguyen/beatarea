@@ -49,5 +49,29 @@ describe Event do
         @event.artists_names.should == 'Bob,John'
       end
     end
+
+    describe 'event_title' do
+      before do
+        @dj_one = create(:artist, :name => 'Bob')
+        @dj_two = create(:artist, :name => 'John')
+        @event = create(:event, :artists => [@dj_one, @dj_two])
+      end
+
+      context 'event_name is nil' do
+        it 'should return the artists names' do
+          @event.event_title.should == 'Bob,John'
+        end
+      end
+
+      context 'event_name has value' do
+        before do
+          @event.update_attribute(:event_name, 'Ultra')
+        end
+
+        it 'should return the artists names' do
+          @event.event_title.should == 'Ultra'
+        end
+      end
+    end
   end
 end

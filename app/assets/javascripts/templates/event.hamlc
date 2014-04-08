@@ -5,7 +5,7 @@
     %img{:src => @event.get("avatar"), :width => 80}
 .event-header
     %h1
-        = @event.get("artists_names")
+        = @event.get("event_title")
     %h2
         = @event.get("location_name")
     %h3

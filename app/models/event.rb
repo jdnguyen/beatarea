@@ -2,6 +2,7 @@ class Event
   include Mongoid::Document
   include Mongoid::Timestamps
 
+  field :event_name
   field :location_name
   field :location_address
   field :start_time, :type => DateTime
@@ -19,5 +20,9 @@ class Event
 
   def artists_names
     self.artists.map(&:name).join(',')
+  end
+
+  def event_title
+    self.event_name || artists_names
   end
 end
