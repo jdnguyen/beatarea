@@ -12,7 +12,7 @@ module ApplicationHelper
         json.location_name event.location_name
         json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
         json.event_title event.event_title
-        json.avatar event.artists.first.avatar.url(:thumb)
+        json.avatar event.event_image
       end
     end
   end
