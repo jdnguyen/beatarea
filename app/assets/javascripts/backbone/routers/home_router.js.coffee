@@ -1,5 +1,6 @@
 class BeatArea.Routers.Home extends Backbone.Router
   initialize: (options) ->
+    @speed = 300
     @mainView = new BeatArea.Views.Main
 
   routes:
@@ -7,9 +8,12 @@ class BeatArea.Routers.Home extends Backbone.Router
     "": "index"
 
   index: ->
-    $("#events").show "slide",
-      direction: "left"
-    , 500
+    $("#event-more-info").hide "slide",
+      direction: "right"
+    , @speed, ->
+      $("#events").show "slide",
+        direction: "left"
+      , @speed
 
     $(".back-page").hide()
 
@@ -18,11 +22,16 @@ class BeatArea.Routers.Home extends Backbone.Router
   eventInfo: (id) ->
     $("#events").hide "slide",
       direction: "left"
-    , 500
+    , @speed, ->
+      $("#event-more-info").show "slide",
+        direction: "right"
+      , @speed
 
     $(".back-page").fadeIn()
 
     event = new BeatArea.Models.Event
       id: id
+
     @eventInfoView = new BeatArea.Views.EventInfo
+      el: "#event-more-info"
       model: event

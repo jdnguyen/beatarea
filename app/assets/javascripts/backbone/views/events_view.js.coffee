@@ -1,5 +1,5 @@
 class BeatArea.Views.Events extends Backbone.View
-  el: '#events.container'
+  el: '#events'
 
   initialize: (options) ->
     @collection = new BeatArea.Collections.Events

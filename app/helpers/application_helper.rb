@@ -10,6 +10,8 @@ module ApplicationHelper
       json.array!(events) do |event|
         json.id event.id.to_s
         json.location_name event.location_name
+        json.ticket_url event.ticket_url
+        json.location_address event.location_address
         json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
         json.event_title event.event_title
         json.avatar event.event_image
@@ -19,8 +21,13 @@ module ApplicationHelper
 
   def json_for_event(event)
     Jbuilder.encode do |json|
+      json.id event.id.to_s
+      json.location_name event.location_name
       json.ticket_url event.ticket_url
       json.location_address event.location_address
+      json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
+      json.event_title event.event_title
+      json.avatar event.event_image
     end
   end
 end

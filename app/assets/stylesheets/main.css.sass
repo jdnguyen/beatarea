@@ -7,6 +7,10 @@ body
 .navbar-brand
   float: none
   display: inline-block
+  color: white
+
+#event-more-info, #events
+  display: none
 
 .row
   padding: 5px 10px
@@ -26,6 +30,8 @@ body
     font-size: 14px
   h3
     font-size: 13px
+  &.min-height
+    min-height: 100px
 
 .event-image
   display: inline-block
@@ -48,14 +54,18 @@ body
   margin-right: 5px
 
 .btn
-  display: inline-block
+  @media screen and (max-width: 400px)
+    display: block
+    margin-bottom: 3px
+  @media screen and (min-width: 401px)
+    display: inline-block
 
 .event-more-info
   display: none
 
 .back-page
   display: none
-  color: white
+  color: #999999
   font-size: 25px
   padding: 11px
   position: absolute
