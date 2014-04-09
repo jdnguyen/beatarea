@@ -29,4 +29,5 @@ class BeatArea.Views.Event extends Backbone.View
     @expanded = !@expanded
 
   moreInfo: ->
-    router.navigate('events/' + @model.id, {trigger: true, replace: true})
+    router.navigate('events/' + @model.id, {replace: true})
+    router.eventInfo()

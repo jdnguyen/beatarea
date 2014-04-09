@@ -7,4 +7,5 @@ class BeatArea.Views.Main extends Backbone.View
   initialize: (options) ->
 
   backToIndex: ->
-    router.navigate('', {trigger: true, replace: true})
+    router.navigate('', {replace: true})
+    router.index()
