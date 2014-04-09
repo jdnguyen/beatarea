@@ -14,7 +14,7 @@ module ApplicationHelper
         json.location_address event.location_address
         json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
         json.event_title event.event_title
-        json.avatar event.event_image
+        json.avatar event.event_image.url(:thumb)
       end
     end
   end
@@ -27,7 +27,7 @@ module ApplicationHelper
       json.location_address event.location_address
       json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
       json.event_title event.event_title
-      json.avatar event.event_image
+      json.avatar event.event_image.url(:thumb)
     end
   end
 end
