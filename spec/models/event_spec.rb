@@ -4,6 +4,7 @@ describe Event do
   describe 'fields' do
     it { should have_fields(:location_name, :location_address, :ticket_url, :stubhub_id) }
     it { should have_field(:start_time, :early_bird_time).of_type(DateTime)}
+    it { should have_field(:sold_out).of_type(Mongoid::Boolean).with_default_value_of(false)}
   end
 
   describe 'validations' do

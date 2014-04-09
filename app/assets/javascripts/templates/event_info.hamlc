@@ -1,6 +1,17 @@
-%a%button.btn.btn-default{:href => @event.get("ticket_url"), :target => "_blank"}
-    BUY TICKETS
-- event_location = if @event.get("location_address") then 'https://maps.google.com/?q=' + @event.get("location_address") else ''
-%a%button.btn.btn-default{:href => event_location, :target => "_blank"}
-    EVENT LOCATION
-
+.event-image
+    %img{:src => @event.get("avatar"), :width => 80}
+.event-header
+    %h1
+        = @event.get("event_title")
+    %h2
+        = @event.get("location_name")
+    %h3
+        = @event.get("start_time")
+.event-buttons
+    %a%button.btn.btn-default{:href => @event.get("ticket_url"), :target => "_blank"}
+        BUY TICKETS
+    - event_location = if @event.get("location_address") then 'https://maps.google.com/?q=' + @event.get("location_address") else ''
+    %a%button.btn.btn-default{:href => event_location, :target => "_blank"}
+        EVENT LOCATION
+    %button.btn.btn-default.more-info
+        MORE INFO

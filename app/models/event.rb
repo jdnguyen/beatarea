@@ -10,6 +10,7 @@ class Event
   field :ticket_url
   field :early_bird_time, :type => DateTime
   field :stubhub_id
+  field :sold_out, :type => Boolean, :default => false
 
   has_and_belongs_to_many :artists
   #embeds_many :notifications

@@ -4,6 +4,7 @@ class BeatArea.Views.Event extends Backbone.View
 
   events:
     'click' : 'toggleExpand'
+    'click .more-info' : 'moreInfo'
 
   initialize: (options) ->
     @expanded = false
@@ -21,16 +22,11 @@ class BeatArea.Views.Event extends Backbone.View
       @$('.expand').fadeIn()
       @$('.event-buttons').slideUp()
     else
-      if @$('.event-buttons').is(':empty')
-        @model.fetch
-          success: =>
-            @$('.event-buttons').html JST['event_info']
-              event: @model
-            @$('.event-buttons').slideDown()
-      else
-        @$('.event-buttons').slideDown()
+      @$('.event-buttons').slideDown()
       @$('.expand').hide()
       @$('.close').fadeIn()
 
     @expanded = !@expanded
 
+  moreInfo: ->
+    router.navigate('events/' + @model.id, {trigger: true, replace: true})
