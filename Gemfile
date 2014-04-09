@@ -23,6 +23,7 @@ gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 gem 'aws-sdk', '~> 1.3.4'
 gem 'unicorn'
 gem 'email_validator'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'rspec', '~> 2.14.1'
