@@ -24,7 +24,7 @@ class Event
   scope :sort_by_date, -> { order_by(:start_time => :asc) }
 
   def artists_names
-    self.artists.map(&:name).join(',')
+    self.artists.map(&:name).join(', ')
   end
 
   def event_title

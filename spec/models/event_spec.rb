@@ -47,7 +47,7 @@ describe Event do
       end
 
       it 'should join the artists names' do
-        @event.artists_names.should == 'Bob,John'
+        @event.artists_names.should == 'Bob, John'
       end
     end
 
@@ -60,7 +60,7 @@ describe Event do
 
       context 'event_name is nil' do
         it 'should return the artists names' do
-          @event.event_title.should == 'Bob,John'
+          @event.event_title.should == 'Bob, John'
         end
       end
 
