@@ -7,6 +7,7 @@
       %ul.dropdown-menu.pull-right
         %li
           - if current_user
+            %a{:href => "#"} My Events
             %a#sign-out{:href => signout_path} Sign Out
           - else
             %a#sign-in{:href => "#"} Sign In

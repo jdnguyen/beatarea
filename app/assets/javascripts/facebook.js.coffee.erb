@@ -9,7 +9,7 @@ jQuery ->
 window.fbAsyncInit = ->
   facebook_response = null
 
-  FB.init(appId: '311453372339962', cookie: true)
+  FB.init(appId: <%= FACEBOOK_CONFIG['app_id'] %>, cookie: true)
 
   FB.getLoginStatus (response) ->
     if response.status is "connected"
