@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Artist do
   describe 'fields' do
-    it { should have_fields(:name, :soundcloud_id, :website, :facebook_page, :twitter_page) }
+    it { should have_fields(:name, :soundcloud_id, :website, :facebook_page, :twitter_page, :soundcloud_songs) }
   end
 
   describe 'validations' do

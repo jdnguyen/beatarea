@@ -1,17 +1,20 @@
 .event-image
-    %img{:src => @event.get("avatar"), :width => 80}
+  %img{:src => @event.get("avatar"), :width => 80}
 .event-header
-    %h1
-        = @event.get("event_title")
-    %h2
-        = @event.get("location_name")
-    %h3
-        = @event.get("start_time")
-.event-buttons
-    %a%button.btn.btn-default{:href => @event.get("ticket_url"), :target => "_blank"}
-        BUY TICKETS
-    - event_location = if @event.get("location_address") then 'https://maps.google.com/?q=' + @event.get("location_address") else ''
-    %a%button.btn.btn-default{:href => event_location, :target => "_blank"}
-        EVENT LOCATION
-    %button.btn.btn-default.more-info
-        MORE INFO
+  %h1
+    = @event.get("event_title")
+  %h2
+    = @event.get("location_name")
+  %h3
+    = @event.get("start_time")
+
+#artists-wrap
+  - for artist in @event.get("artists")
+    .artist-wrap
+      - if artist.soundcloud_songs
+        .sound-cloud-wrap
+          - for soundcloud_song in artist.soundcloud_songs.split(",")
+            - url = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + soundcloud_song + "&auto_play=false&hide_related=false&show_artwork=false"
+            %iframe{frameborder: "no", scrolling: "no", src: url, width: "100%"}
+
+      .social-media

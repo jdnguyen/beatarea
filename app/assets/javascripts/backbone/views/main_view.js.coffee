@@ -7,4 +7,5 @@ class BeatArea.Views.Main extends Backbone.View
   initialize: (options) ->
 
   backToIndex: ->
+    $(".sound-cloud-wrap").remove()
     router.index()

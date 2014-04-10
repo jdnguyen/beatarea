@@ -8,6 +8,7 @@ class Artist
   field :website
   field :facebook_page
   field :twitter_page
+  field :soundcloud_songs
 
   has_and_belongs_to_many :genres
 

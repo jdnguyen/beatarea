@@ -28,6 +28,9 @@ module ApplicationHelper
       json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
       json.event_title event.event_title
       json.avatar event.event_image.url(:thumb)
+      json.artists event.artists do |artist|
+        json.soundcloud_songs artist.soundcloud_songs
+      end
     end
   end
 end
