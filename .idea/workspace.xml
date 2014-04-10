@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="">
+    <list default="true" id="3b59d691-fb79-4855-9871-97be74cc403c" name="Default" comment="added soldout">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/soldout.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/templates/event_info.hamlc" afterPath="$PROJECT_DIR$/app/assets/javascripts/templates/event_info.hamlc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,7 +33,7 @@
     <file path="/artist_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396827279610" ignored="false" />
     <file path="/event_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396921878992" ignored="false" />
     <file path="/factories.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396769106698" ignored="false" />
-    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397094773123" ignored="false" />
+    <file path="/Dummy.txt" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397096070005" ignored="false" />
     <file path="/bootstrap.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396757574117" ignored="false" />
     <file path="/home_router.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397091448641" ignored="false" />
     <file path="/beatarea.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777413425" ignored="false" />
@@ -38,7 +42,7 @@
     <file path="/event.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397005535412" ignored="false" />
     <file path="/event_controller.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396770811074" ignored="false" />
     <file path="/event_controller_spec.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772889196" ignored="false" />
-    <file path="/application_helper.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397092120631" ignored="false" />
+    <file path="/application_helper.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397095737713" ignored="false" />
     <file path="/events_controller.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396772762790" ignored="false" />
     <file path="/events_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397005965015" ignored="false" />
     <file path="/event_view.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397008487717" ignored="false" />
@@ -46,8 +50,8 @@
     <file path="/application.js" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777112868" ignored="false" />
     <file path="/context.js.coffee" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396777388370" ignored="false" />
     <file path="/eventz.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396778282043" ignored="false" />
-    <file path="/event.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397007005795" ignored="false" />
-    <file path="/main.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397095308318" ignored="false" />
+    <file path="/event.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397095822582" ignored="false" />
+    <file path="/main.css.sass" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1397096038662" ignored="false" />
     <file path="/seeds.rb" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396796713093" ignored="false" />
     <file path="/event_expanded.hamlc" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396843892883" ignored="false" />
     <file path="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/f7cbd26ba1d28d48de824f0e94586655" changelist="3b59d691-fb79-4855-9871-97be74cc403c" time="1396843274187" ignored="false" />
@@ -84,7 +88,7 @@
           <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="29" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
+                <state line="30" column="34" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -93,7 +97,7 @@
           <file leaf-file-name="event.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/event.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="25" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+                <state line="12" column="17" selection-start="301" selection-end="309" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -129,7 +133,7 @@
           <file leaf-file-name="main.css.sass" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.16901408">
+                <state line="40" column="14" selection-start="627" selection-end="627" vertical-scroll-proportion="0.6830986">
                   <folding />
                 </state>
               </provider>
@@ -175,10 +179,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="event.hamlc" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="event.hamlc" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="40" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+                <state line="0" column="0" selection-start="0" selection-end="45" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -193,10 +197,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="45" selection-start="81" selection-end="81" vertical-scroll-proportion="0.042432815">
+                <state line="16" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="-10.0">
                   <folding />
                 </state>
               </provider>
@@ -214,7 +218,7 @@
           <file leaf-file-name="event_info.hamlc" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event_info.hamlc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="50" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+                <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -265,19 +269,19 @@
         <option value="$PROJECT_DIR$/spec/models/event_spec.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/events_view.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_view.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/event_info_view.js.coffee" />
         <option value="$PROJECT_DIR$/spec/models/artist_spec.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/routers/home_router.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backbone/views/main_view.js.coffee" />
         <option value="$PROJECT_DIR$/README.rdoc" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/event_info.hamlc" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/artist.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.sass" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/templates/event_info.hamlc" />
       </list>
     </option>
   </component>
@@ -1274,7 +1278,11 @@
       <created>1397094775358</created>
       <updated>1397094775358</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="made nav fixed to top">
+      <created>1397095508000</created>
+      <updated>1397095508000</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1349,7 +1357,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sanitize text gem" />
+    <option name="LAST_COMMIT_MESSAGE" value="made nav fixed to top" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1363,7 +1371,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="added in some style changes" />
     <MESSAGE value="fixed thumbnail size of artist avatar" />
     <MESSAGE value="added in front end toggling of viewing events" />
     <MESSAGE value="changing thumbnail dimensions" />
@@ -1388,6 +1395,7 @@
     <MESSAGE value="updated url in README" />
     <MESSAGE value="social buttons added" />
     <MESSAGE value="added sanitize text gem" />
+    <MESSAGE value="made nav fixed to top" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1397,13 +1405,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/backbone/models/event.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="16" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
@@ -1414,13 +1415,6 @@
     <entry file="file://$PROJECT_DIR$/spec/models/event_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="25" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1442,20 +1436,6 @@
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/artist_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1488,23 +1468,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event_info.hamlc">
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="50" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+        <state line="16" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/spec/models/artist_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="81" selection-end="81" vertical-scroll-proportion="0.042432815">
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/event.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="301" selection-end="309" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="34" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event_info.hamlc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/templates/event.hamlc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="45" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.16901408">
+        <state line="40" column="14" selection-start="627" selection-end="627" vertical-scroll-proportion="0.6830986">
           <folding />
         </state>
       </provider>

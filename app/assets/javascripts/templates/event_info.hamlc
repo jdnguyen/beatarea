@@ -1,3 +1,6 @@
+- if @event.get("sold_out")
+  .sold-out-banner
+
 .event-image
   %img{:src => @event.get("avatar"), :width => 80}
 .event-header

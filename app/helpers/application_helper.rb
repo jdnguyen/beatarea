@@ -14,6 +14,7 @@ module ApplicationHelper
         json.location_address event.location_address
         json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
         json.event_title event.event_title
+        json.sold_out event.sold_out
         json.avatar event.event_image.url(:thumb)
       end
     end
@@ -27,6 +28,7 @@ module ApplicationHelper
       json.location_address event.location_address
       json.start_time event.start_time.strftime('%-m/%-d/%y %l:%M%P')
       json.event_title event.event_title
+      json.sold_out event.sold_out
       json.avatar event.event_image.url(:thumb)
       json.artists event.artists do |artist|
         json.name artist.name
