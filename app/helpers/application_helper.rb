@@ -29,6 +29,10 @@ module ApplicationHelper
       json.event_title event.event_title
       json.avatar event.event_image.url(:thumb)
       json.artists event.artists do |artist|
+        json.name artist.name
+        json.soundcloud_id artist.soundcloud_id
+        json.facebook_page artist.facebook_page
+        json.twitter_page artist.twitter_page
         json.soundcloud_songs artist.soundcloud_songs
       end
     end
