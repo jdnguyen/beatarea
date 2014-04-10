@@ -1,6 +1,16 @@
 .navbar.navbar-inverse
   .container
     .glyphicon.glyphicon-chevron-left.back-page
+    .dropdown
+      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+        .glyphicon.glyphicon-align-justify
+      %ul.dropdown-menu.pull-right
+        %li
+          - if current_user
+            %a#sign-out{:href => signout_path} Sign Out
+          - else
+            %a#sign-in{:href => "#"} Sign In
+
     .navbar-inner
       .navbar-brand
         BeatArea
@@ -13,5 +23,4 @@
 :javascript
   $(function() {
     window.router = new BeatArea.Routers.Home();
-    Backbone.history.start();
   });

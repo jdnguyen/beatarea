@@ -7,7 +7,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'rails-backbone'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bson_ext'
@@ -25,6 +24,8 @@ gem 'unicorn'
 gem 'email_validator'
 gem 'newrelic_rpm'
 gem 'sanitize'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'rspec', '~> 2.14.1'

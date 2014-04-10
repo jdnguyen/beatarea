@@ -3,6 +3,11 @@ class BeatArea.Routers.Home extends Backbone.Router
     @speed = 300
     @mainView = new BeatArea.Views.Main
 
+    Backbone.history.start() unless Backbone.History.started
+    $(document).on "page:change", ->
+      Backbone.history.stop()
+      Backbone.history.start()
+
   routes:
     "events/:id": "eventInfo"
     "": "index"
