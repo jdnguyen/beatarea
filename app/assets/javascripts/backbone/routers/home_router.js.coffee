@@ -25,6 +25,7 @@ class BeatArea.Routers.Home extends Backbone.Router
     @eventsView = new BeatArea.Views.Events if !@eventsView
 
   eventInfo: (id) ->
+    $("#event-more-info .row").empty()
     $("#events").hide "slide",
       direction: "left"
     , @speed, ->
