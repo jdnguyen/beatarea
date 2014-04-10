@@ -17,4 +17,4 @@ I plan on building this first for NYC since I know the area and after that, I wi
 
 It is using the Rails Admin gem to manually input data right now and that is being done by other friends who have no experience with coding. 
 
-You can view the work in progress here: http://beatarea.herokuapp.com/
+You can view the work in progress here: http://www.beatarea.com
