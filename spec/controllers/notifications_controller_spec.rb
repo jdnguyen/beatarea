@@ -1,38 +1,36 @@
 require 'spec_helper'
 
-describe EventsController do
-  describe 'index' do
+describe NotificationsController do
+  describe 'create' do
     before do
-      @event_one = create(:event, :start_time => 1.day.from_now)
-      @event_two = create(:event, :start_time => 1.day.ago)
-      @event_three = create(:event)
-      @event_one.reload
-      @event_three.reload
-      get :index
+      @event = create(:event, :start_time => 1.day.from_now)
     end
 
-    it 'should assign events' do
-      assigns(:events).should =~ [@event_one, @event_three]
+    context 'good email' do
+      it 'should create a new notification' do
+        expect{
+          post :create, :email => 'jdnguyenxo@gmail.com'
+        }.to change(@event.reload.notifications.count)
+        @event.notifications.last.email.should == 'jdnguyenxo@gmail.com'
+      end
+
+      it 'should respond with a 200' do
+        post :create, :email => 'jdnguyenxo@gmail.com'
+        response.response_code.should == 200
+      end
     end
 
-    it 'should respond with json of all the events' do
-      response.body.should == json_for_events([@event_one, @event_three])
-    end
-  end
+    context 'bad email' do
+      it 'should not create a new notification' do
+        expect{
+          post :create, :email => 'jdnguyenxo'
+        }.to_not change(@event.reload.notifications.count)
+      end
 
-  describe 'show' do
-    before do
-      @event = create(:event)
-      @event.reload
-      get :show, :id => @event.id
-    end
-
-    it 'should assign event' do
-      assigns(:event).should == @event
-    end
-
-    it 'should respond with json of the event' do
-      response.body.should == json_for_event(@event)
+      it 'should respond with a 400' do
+        post :create, :email => 'jdnguyenxo'
+        response.response_code.should == 400
+      end
     end
   end
 end

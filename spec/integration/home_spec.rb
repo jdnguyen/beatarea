@@ -18,7 +18,7 @@ describe 'home page' do
   end
 
   it 'should not display artist name but event name if there is one', :js => true do
-    @event.update_attribute(:name, "Ultra")
+    @event.update_attribute(:event_name, "Ultra")
     visit '/'
     expect(page).to have_content("Ultra")
     expect(page).not_to have_content(@artist.name)

@@ -32,9 +32,9 @@ class Event
   end
 
   def event_image
-    if self.avatar.exists?
+    if self.avatar.exists? or !self.artists.first
       self.avatar
-    else
+    elsif self.artists.first
       self.artists.first.avatar
     end
   end
