@@ -4,10 +4,8 @@ class Notification
 
   field :email
 
-  belongs_to :event
+  embedded_in :event
+  belongs_to :user
 
-  validates_presence_of :email
-  validates_uniqueness_of :email
-
-  validates :email, :email => true
+  before_create :load_email
 end

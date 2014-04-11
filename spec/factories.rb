@@ -12,4 +12,9 @@ FactoryGirl.define do
   factory :genre do
     name "dubstep"
   end
+
+  factory :user do
+    name "john nguyen"
+    email "jdnguyenxo@gmail.com"
+  end
 end
