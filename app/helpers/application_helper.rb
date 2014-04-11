@@ -1,15 +1,4 @@
 module ApplicationHelper
-  def mock_facebook_response
-    OmniAuth.config.mock_auth[:facebook] = {
-        'uid' => '1337',
-        'provider' => 'facebook',
-        'info' => {
-            'name' => 'John Nguyen',
-            'email' => 'jdnguyenxo@gmail.com'
-        }
-    }
-  end
-
   def rle(message, title="")
     Rails.logger.error("-"*10 + " " + title + " " + "-"*60)
     Rails.logger.error(message)
