@@ -30,6 +30,8 @@ gem 'omniauth-facebook'
 group :development, :test do
   gem 'rspec', '~> 2.14.1'
   gem 'rspec-rails', '~> 2.14.2'
+  gem 'capybara'
+  gem 'selenium-webdriver'
   gem 'mongoid-rspec'
   gem 'factory_girl_rails'
   gem 'database_cleaner', '~> 1.2.0'
