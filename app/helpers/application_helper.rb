@@ -16,6 +16,13 @@ module ApplicationHelper
     Rails.logger.error("-"*75)
   end
 
+  def json_for_errors(errors)
+    Jbuilder.encode do |json|
+      json.status "fail"
+      json.error errors
+    end
+  end
+
   def json_for_events(events)
     Jbuilder.encode do |json|
       json.array!(events) do |event|
