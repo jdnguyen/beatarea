@@ -9,4 +9,10 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_user
+
+  def authenticate_user
+    unless current_user
+      raise "You are not logged in"
+    end
+  end
 end

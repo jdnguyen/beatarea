@@ -6,6 +6,4 @@ class Notification
 
   embedded_in :event
   belongs_to :user
-
-  before_create :load_email
 end
